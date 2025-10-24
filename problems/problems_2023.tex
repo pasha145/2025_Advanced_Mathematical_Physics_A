@@ -1,0 +1,467 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath,amssymb,amsfonts}
+%\usepackage{hyperref}
+%\usepackage{color}
+
+\title{}
+\author{}
+
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\im}{\operatorname{Im}}
+\newcommand{\re}{\operatorname{Re}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Res}{\mathop{Res}}
+%\numberwithin{equation}{section}
+
+\begin{document}
+\maketitle
+
+\begin{itemize}
+\item The problems at the exam will be similar to these ones, but with some not very essential changes.
+\item Problems marked with ``*'' will not be included. Please tell if any of the non-marked problems looks too complicated.
+\end{itemize}
+
+\
+
+\begin{enumerate}
+\item\label{item:1} Put to the canonical form the following equation:
+\begin{equation*}
+17 \partial_{xx}u + 20 \partial_{xy}u+8\partial_{yy}u+8\partial_{xz}u+4\partial_{yz}y+\partial_{zz}u+\partial_xu+u=0
+\end{equation*}
+
+\item\label{item:2} Find the Green function of discrete Laplace operator on a finite lattice with periodic boundary conditions (\(\mathbb{Z}/N\mathbb{Z}\)), \(\Delta=T+T^{-1}-2\). Solve this problem directly, then check that obtained result is consistent with the Fourier transform.
+
+\item\label{item:3} Study the Fourier transform on a segment \(x=1,\ldots,N\):
+\begin{enumerate}
+\item\label{item:4} Compute scalar products between the functions \(\phi_k(x)=\sin \frac{\pi k x}{N+1}\), \(k=1,\ldots, N\):
+\[(\phi_k,\phi_{k'})=\sum_{x=1}^N\phi_k(x)\phi_{k'}(x).\]
+\item\label{item:5} Write the formulas for direct and inverse Fourier transform.
+\end{enumerate}
+
+\item\label{item:6} Solve the equation
+\begin{equation*}
+u''(t)+\omega^2u(t)=f(t), \quad u(0)=u_0, \quad u'(0)=u_1.
+\end{equation*}
+
+\item\label{item:7} Compute the Fourier transforms of the following functions on a circle \(\phi\in [0,2\pi)\):
+\begin{itemize}
+\item \(f_1(\phi)=\phi\). What is the asymptotic behavior of the coefficients at large \(n\)?
+\item \(f_2(\phi)=|\pi-\phi|\). Compute \(f_2(0)\) and compare with its Fourier series at this point. Is it giving any non-trivial identity?
+\end{itemize}
+
+\item\label{item:8} Compute the Fourier transformations of the following functions on the real line:
+
+\begin{itemize}
+\item \(f_3(x)=\frac1{\cosh x}\). There are at least two possible ways to do this. One way is close the contour and compute the sum of residues explicitly. Another way is to consider the integrals over \(\mathbb{R}\) and \(\mathbb{R}+2\pi i\), compare them, and then compute the difference.
+\item \(f_4(x)=(1-2 x^2) e^{-x^2/2}\).
+\end{itemize}
+
+\item\label{item:9} Define Fourier transform for the function on a segment \(x\in [0,L]\), vanishing at the boundaries, by
+\begin{equation*}
+f(x)=\sum_{k=1}^{\infty}\tilde{f}_k\sin \frac{\pi kx}{L}.
+\end{equation*}
+Find the inverse transformation.
+
+\item\label{item:10} * (This version is too complicated. I've changed initial and boundary conditions). Solve the following initial and boundary value problems on the rectangle \(x\in [0,L]\), \(t\in [0,T]\), with zero boundary conditions \(u(t,0)=u(t,L)=0\):
+
+\begin{itemize}
+\item 
+\(
+u_{tt}(t,x)-u_{xx}(t,x)=0, \quad u(0,x)=\sin^2 \frac{\pi x}{L}, \quad u_t(0,x)= \sin^2 \frac{2\pi x}{L}.
+\)
+\item 
+\(
+u_{tt}(t,x)+u_{xx}(t,x)=0,\quad u(0,x)=\sin^2 \frac{\pi x}{L}, \quad u(T,x)=\sin^3 \frac{\pi x}{L}.
+\)
+\end{itemize}
+
+\item\label{item:11} (Simple version of the previous problem) Solve the following initial and boundary value problems on the rectangle \(x\in [0,L]\), \(t\in [0,T]\), with zero boundary conditions \(u(t,0)=u(t,L)=0\):
+
+\begin{itemize}
+\item 
+\(
+u_{tt}(t,x)-u_{xx}(t,x)=0, \quad u(0,x)=\sin^3 \frac{\pi x}{L}, \quad u_t(0,x)= \sin \frac{2\pi x}{L}.
+\)
+\item 
+\(
+u_{tt}(t,x)+u_{xx}(t,x)=0,\quad u(0,x)=\sin \frac{\pi x}{L}, \quad u(T,x)=\sin^3 \frac{\pi x}{L}.
+\)
+\end{itemize}
+
+\item\label{item:12} Find the plane wave solution of the Maxwell's equations.
+
+\item\label{item:13} Find explicitly the Green function of the operator \(\Delta-m^2\) in the 5-dimensional space.
+
+Hint: try to use an ansatz \(e^{-m r} \frac{P(mr)}{r^3}\) with some polynomial \(P\).
+
+\item\label{item:14} * Compute the integral which appears in the computation of the Green function of this operator in odd dimensions
+\[
+\int_0^{\infty} e^{-\frac{x}{2}(\lambda+1/\lambda)}\frac{d\lambda}{\lambda^{n+1/2}},\qquad n\in \mathbb{Z}, \qquad x>0.
+\]
+
+Hint: it might be useful to choose \(\lambda^{1/2}\) as a new variable, and also to introduce independent coefficients in front of \(\lambda\) and \(1/\lambda\) in the exponent.
+
+\item\label{item:15} Compute the Fourier transform of \(\mathrm{v.p.} \frac1{\omega}\), then check that inverse Fourier transform recovers initial (generalized) function.
+
+\item\label{item:16} Solve the following equation:
+\[
+u''(t)+\mu^2u(t)=\theta_H(t)\sin\Omega t,\qquad u(0)=u'(0)=0.
+\]
+What is the difference between \(\Omega^2\neq \mu^2\) and \(\Omega^2=\mu^2\)?
+
+\item\label{item:17} Solve the heat equation on the real line
+\[
+u_t(t,x)=\Delta u(t,x),\qquad u(0,x)=\theta_H(x).
+\]
+How smooth is \(u(t,x)\) for \(t>0\)?
+
+
+\item\label{item:18} Solve the wave equation
+\[
+u_{tt}-u_{xx}=f(t,x), \qquad u(0,x)=u_t(0,t)=0,
+\]
+where
+\[
+f(t,x)=\left(\theta_H(t-1)-\theta_H(t-3)\right)\left(\theta_H(x+1)-\theta_H(x-1)\right)
+\]
+
+\item\label{item:19} Solve the wave equation
+
+\begin{itemize}
+\item
+On \(\mathbb{R}^{1+2}\):
+\[
+u_{tt}-u_{xx}-u_{yy}=(\theta_H(t-1)-\theta_H(t-2))\delta(x)\delta(y),\qquad u(0,x,y)=u_t(0,x,y)=0.
+\]
+\item
+On \(\mathbb{R}^{1+3}\):
+\[
+u_{tt}-u_{xx}-u_{yy}-u_{zz}=(\theta_H(t-1)-\theta_H(t-2))\delta(x)\delta(y)\delta(z), \qquad u(0,x,y,z)=u_t(0,x,y,z)=0.
+\]
+\end{itemize}
+
+\item\label{item:20} Solve the wave equation in \(\mathbb{R}^{1+1}\):
+\[
+u_{tt}-u_{xx}=\theta_H(x+3)-2\theta_H(x+2)+2\theta_H(x-2)-\theta_H(x-3),\qquad u(0,x)=u_t(0,x)=0.
+\]
+You may first consider for simplicity \(t>4\) and then obtain solution for arbitrary \(t\).
+
+\item\label{item:23} Solve Laplace equation \(u_{z\bar{z}}=0\) in the unit disk \(|z|\le 1\) with the following boundary conditions:
+\begin{itemize}
+\item \(
+u(e^{i\phi})=\cos\phi,
+\)
+\item \(u(e^{i\phi})=\left[\begin{array}{ll}1, & \phi\in(0,\pi)\\-1, & \phi\in(\pi,2\pi)\end{array}\right.\)
+\end{itemize}
+
+\item\label{item:21} Find Green function of the Laplace equation in the domain \[D=\{z|\im z\in [0,\pi], \re z\in [0,\infty)\}\] with boundary conditions \(G(z,z_0)=0, z\in \partial D\) and \(G(z,z_0)\to 0\) when \(\re z\to \infty\).
+
+\textit{Idea 1}: first solve this problem in the infinite strip, and then add image charge.
+
+\textit{Idea 2}: use conformal map \(w(z)=\cosh z\).
+
+\item\label{item:22} Solve Laplace equation \(u_{z\bar z}=0\) in the domain
+\[
+D=\{z|\re z\geq 0, |z-1|\le a\}
+\]
+with the following boundary conditions at \(\partial D\):
+\[
+u=0,\quad z\in i \mathbb{R},\qquad u=u_0,\quad |z-1|=a,\qquad u\to 0,\quad z\to +\infty.
+\]
+
+\textit{Idea 1}: find conformal map of this domain to the annulus (look through real fractional-linear transformations) 
+
+\textit{Idea 2}: Study equipotential surfaces in the system of two opposite charges at the points \(z=\pm b\).
+
+
+\item\label{item:24} Solve 3d Laplace equation \(\Delta u=0\) in the domain
+\[
+D=\{(r,\theta,\phi)|r>R\}
+\]
+with the boundary conditions
+\[
+u(R,\theta,\phi)=\cos^2\theta,\qquad \lim_{r\to \infty}u(r,\theta,\phi)=0
+\]
+
+\item\label{item:25} Find all solutions of the Laplace equation \(\Delta u(x,y,z) = 0\) which are not more that quadratic in \(x, y, z\). Expand them in spherical harmonics.
+
+
+\item\label{item:26} Compute the scalar product between associated Legendre polynomials:
+\[
+\int_{-1}^1 P_l^m(x)P_k^m(x) dx
+\]
+
+Definition:
+\[
+P_l^m(x)=(-1)^m(1-x^2)^{m/2}\frac{d^m}{dx^m}P_l(x),\qquad P_l(x)=\frac{1}{2^ll!}\frac{d^l}{dx^l}(x^2-1)^l.
+\]
+
+\item\label{item:27} Find the Fourier expansion of the plane wave
+\[
+e^{i k r\sin\phi} = \sum_{n\in \mathbb{Z}} c_n(r)e^{in\phi}
+\]
+
+
+\item\label{item:28} * Check that the following expressions are polynomials and that they are orthogonal with respect to corresponding scalar products:
+
+\begin{itemize}
+\item \(H_n(x)=(-1)^n e^{x^2}\frac{d^n}{dx^n}e^{-x^2}\), \qquad \((f,g)=\int_{-\infty}^{\infty} \bar{f}(x) g(x)e^{-x^2}dx\),
+
+\item \(L_n^{(\alpha)}(x)=\frac{x^{\alpha}e^{-x}}{n!}\frac{d^n}{dx^n}e^{-x}x^{n+\alpha}\),\qquad \((f,g)=\int_0^{\infty}\bar{f}(x)g(x) x^{\alpha}e^{-x}dx\).
+\end{itemize}
+
+\item\label{item:29} * Solve differential equation
+\[u_t+uu_x=0,\qquad u(0,x)=-\tanh x.\]
+Find the moment of time when its solution becomes non-single-valued.
+
+\item\label{item:30} * Define spherical Bessel functions by the formulas
+\[
+j_l(x)=\sqrt{\frac{2\pi}{x}}J_{n+\frac12}(x),
+\]
+where
+\[
+J_{\nu}(x)=\sum_{n=0}^{\infty}\frac{(-1)^n}{\Gamma(1+\nu+n)n!}\left( \frac{x}{2} \right)^{\nu+2n}.
+\]
+Prove the relation
+\[
+j_n(x)=(-x)^n \left(\frac{1}{x} \frac{d}{dx} \right)^n \frac{\sin x}{x}.
+\]
+
+\end{enumerate}
+
+\newpage
+
+Answers.
+
+\begin{enumerate}
+\item\label{item:34} \(u_{aa}+u_{bb}+u_c=0\), heat equation
+
+\item\label{item:35} \(G(n,0)=\frac{n(N-n)}{2N}-\frac{N^2-1}{12N}\), Fourier transform \(\tilde{G}(k)=\frac1{e^{2\pi ik/N}+e^{-2\pi i k/N}-2}\), \(\tilde{G}(0)=0\), should be compared with \(\frac1{T+T^{-1}-2}\).
+
+\item\label{item:36} \((\phi_k,\phi_{k'})=\frac{N+1}{2}\delta_{k,k'}\), \(\tilde{f}(k)=\sqrt{\frac{2}{N+1}}\sum_{n=1}^N f(n)\sin \frac{\pi k n}{N+1}\), \(f(n)=\sqrt{\frac{2}{N+1}}\sum_{k=1}^N \tilde{f}(k)\sin \frac{\pi k n}{N+1}\)
+
+\item\label{item:37} \(u(t)=u(0)\cos\omega t+u'(0)\frac{\sin\omega t}{\omega}+\int_0^t dt' \frac{\sin \omega(t-t')}{\omega}f(t')\)
+
+\item\label{item:38} 
+\begin{itemize}
+\item \(\phi=\pi+\sum_{n\neq 0}\frac{i e^{in\phi}}{n} \)
+\item \(|\pi-\phi|=\frac{\pi}2+\sum_{k\in \mathbb{Z}}\frac{2e^{i(2k+1)\phi}}{\pi(2k+1)^2}\).
+
+\(\phi=\pi\): \(\sum_{k=0}^{\infty}\frac1{(2k+1)^2}=\frac{\pi^2}{8}\).
+We can also consider \(\sum_{n=1}^{\infty}\frac1{n^2}=\sum_{k=1}^{\infty}\frac1{(2n)^2}+\sum_{k=0}^{\infty}\frac1{(2k+1)^2}\), so \(\sum_{n=1}^{\infty}\frac1{n^2}=\frac{4}{3}\sum_{k=0}^{\infty}\frac1{(2k+1)^2}=\frac{\pi^2}{6}\)
+\end{itemize}
+
+\item\label{item:39}
+\begin{itemize}
+\item  \(\frac{\pi}{\cosh \frac{\pi p}{2}}\)
+\item \(\sqrt{2\pi}(2p^2-1)e^{-p^2/2}\)
+\end{itemize}
+
+\item\label{item:40} \(\tilde{f}_k=\frac{2}{L}\int_0^L f(x) \sin \frac{\pi k x}{L} dx\)
+
+\item\label{item:41} 
+
+\begin{itemize}
+\item \(u(t,x)=\sum_{k=0}^{\infty}\sin \frac{\pi(2k+1)x}{L} \left(- \frac{\cos \frac{\pi(2k+1)t}{L}}{\pi(k^2-1/4)(k+3/2)} - \frac{L}{\pi(2k+1)}\frac{4\sin\frac{\pi(2k+1)t}{L}}{\pi(k-3/2)(k+1/2)(k+5/2)} \right)\)
+\item \(u(t,x)=-\sum_{k=0}^{\infty}\sin \frac{\pi(2k+1)x}{L} \frac{\sinh \frac{\pi(2k+1)(T-t)}{L}}{\pi(k^2-1/4)(k+3/2)\sinh \frac{\pi(2k+1)T}{L}}
+- \frac1{4} \sin \frac{3\pi x}{L} \frac{\sinh \frac{3\pi t}{L}}{\sinh \frac{3\pi T}{L}}+ \frac{3}{4}\sin \frac{\pi x}{L} \frac{\sin \frac{\pi t}{L}}{\sin \frac{\pi T}{L}}\)
+\end{itemize}
+
+\item\label{item:42} 
+\begin{itemize}
+\item \(u(t,x)=\frac{3}{4}\sin \frac{\pi x}{L}\cos \frac{\pi t}{L}- \frac{1}{4}\sin \frac{3 \pi x}{L}\cos \frac{3\pi t}{L}+\frac{L}{2\pi}\sin \frac{2\pi x}{L}\cos \frac{2\pi t}{L}\)
+\item \(u(t,x)=\sin \frac{\pi x}{L}\frac{\sinh \frac{\pi(T-t)}{L}}{\sinh \frac{\pi T}{L}}- \frac1{4} \sin \frac{3\pi x}{L} \frac{\sinh \frac{3\pi t}{L}}{\sinh \frac{3\pi T}{L}}+ \frac{3}{4}\sin \frac{\pi x}{L} \frac{\sin \frac{\pi t}{L}}{\sin \frac{\pi T}{L}}\)
+\end{itemize}
+
+\item\label{item:44} \(\vec{E}=e^{ik(x-ct)}\vec{e}_y\), \(\vec{B}=\frac1{c}e^{ik(x-ct)}\vec{e}_z\)
+
+\item\label{item:43} \(-\frac{1}{8\pi^2} \frac{(1+mr)e^{-mr}}{r^3}\)
+
+\item\label{item:45} \(\sqrt{2\pi}x^{n-1/2} \left(-\frac1{x}\frac{d}{dx} \right)^n e^{-x}\)
+
+\item\label{item:46} \(\frac{-i}{2}\operatorname{sign} t\)
+
+\item\label{item:47} \(u(t)=\frac{1}{\mu^2-\Omega^2}\sin \Omega t - \frac{\Omega/\mu}{\mu^2-\Omega^2}\sin \mu t\), for \(\Omega=\mu\) we have resonance \(u(t)= -\frac{t}{2\mu}\cos \mu t+\frac1{2\mu^2}\cos \mu t\)
+
+\item\label{item:48} \(u(t,x)=2 \sqrt{t}\int_{x'=-\infty}^{x/(2 \sqrt{t})} e^{-x'^2}dx'\), it is infinitely smooth and can be expressed in terms of the error function.
+
+\item\label{item:49}
+
+Introduce \(\phi(x)=\theta_H(1-x^2)\frac{1-x^2}{2}\)
+
+\(t<1: u(t,x)=0\)
+
+\(1<t<3: u(t,x)=\phi(x)-\frac12 \phi(x-t+1)-\frac12 \phi(x+t-1)\)
+
+\(t=3: u(3,x)=\phi(x)-\frac12 \phi(x-2)-\frac12 \phi(x+2)=\psi(x)\), \(u_t(3,x)=\frac12 \phi'(x-2)-\frac12 \phi'(x+2)\)
+
+\(t>3: u(t,x)=\frac12\psi(x+t-3)+\frac12\psi(x-t+3)+(\frac1{4}\phi(x-2+t-3)-\frac1{4}\phi(x-2-t+3))-(\frac1{4}\phi(x+2+t-3)-\frac1{4}\phi(x+2-t+3))\)
+
+
+\item\label{item:50} 
+
+\begin{itemize}
+\item \(t-r<1: 0\)
+
+\(1<t-r<2: u(t,r)=\operatorname{arrcosh}\frac{t-1}{r}\)
+
+ \(2<t-r: u(t,r)=\operatorname{arrcosh}\frac{t-1}{r}-\operatorname{arrcosh}\frac{t-2}{r}\)
+\item \(t-r<1: 0\)
+
+\(1<t-r<2: u(t,r)=1\)
+
+ \(2<t-r: u(t,r)=0\)
+\end{itemize}
+
+\item\label{item:51} To solve an equation \(u_{tt}-u_{xx}=\theta_H(t)f(x)\) we introduce some function \(\phi(x)\), s.t. \(\phi''(x)=-f(x)\). Namely
+
+\(-2<x<2: \phi(x)=-x^2/2\)
+
+\(2<|x|<3: \phi(x)=x^2/2-4|x|+4\)
+
+\(|x|>3: \phi(x)=-|x|-1/2\)
+
+(there is actually a mistake here, I wanted this function to be zero at both infinities, so we need to replace \(3\to 4\))
+
+Now solution is \(u(t,x)=\phi(x)-\frac12 \phi(x-t)-\frac12 \phi(x+t)\)
+
+\item\label{item:52} 
+
+\begin{itemize}
+\item \(u=\frac12(z+\bar{z})\)
+\item \(u=\frac{i}{\pi}\log \frac{1-z}{1+z}\frac{1+\bar{z}}{1-\bar{z}}\)
+\end{itemize}
+
+\item\label{item:53} \(G(z,z_0)=\frac1{2\pi}\log|\frac{\cosh(z)-\cosh(z_0)}{\cosh(z)-\cosh(\bar{z}_0)}|\)
+
+\item\label{item:54} \(u(z)=\frac{2u_0}{\log \frac{2-a^2-2 \sqrt{1-a^2}}{a^2}}\log |\frac{z-\sqrt{1-a^2}}{z+\sqrt{1-a^2}}|\)
+
+\item\label{item:55} \(u(r,\theta,\phi)=(\cos^2\theta-\frac1{3})\frac1{r^3}+\frac1{3r}\)
+
+\item\label{item:62}
+\(1=P_0(\cos\theta)\),
+
+\(z=r P_1(\cos\theta)\),
+
+\(x\pm iy=r e^{\pm i\phi} P_1^1(\cos\theta)\),
+
+\(z^2-x^2/2-y^2/2=r^2 P_2(\cos\theta)\),
+
+\(-3 z(x\pm iy)=r^2 e^{\pm i\phi} P_2^1(\cos\theta)\),
+
+\(3 (x\pm iy)^2=3(x^2-y^2\pm 2ixy)=r^2e^{\pm 2i\phi}P_2^2(\cos\theta)\).
+
+\item\label{item:56} \(\frac{2}{2l+1}\frac{(l+m)!}{(l-m)!}\). Integrate by parts and use that \(\int_{-1}^1(1-x^2)^ldx = \frac{\Gamma(l+1)\sqrt{\pi}}{\Gamma(l+3/2)}=\frac{2^{l+1}l!}{(2l+1)!!}\)
+
+\item\label{item:57} \(e^{ikr\sin\phi}=\sum_{n\in \mathbb{Z}}J_n(kr)e^{in\phi}\)
+
+
+\item\label{item:61} Polynomiality is more or less obvious, then we need to check that each of these polynomials is orthogonal to all monomials of smaller degree.
+
+\item\label{item:59} \(u(t,x)=-\tanh(x-u(t,x)t)\), \(x=tu-\operatorname{arctanh} u\). \(\left.\frac{\partial x}{\partial u}\right|_t=0\) has solutions starting from \(t=1\), so solution becomes non-single-valued.
+
+\item\label{item:60} Explicit computation with the series expansion. Compare with problem 12!
+
+\end{enumerate}
+
+
+\end{document}
+
+\newpage
+
+
+Answers/solutions.
+
+\begin{enumerate}
+\item\label{item:31}
+
+First diagonalize the quadratic form
+\[
+17 \partial_{xx}u + 20 \partial_{xy}u+8\partial_{yy}u+8\partial_{xz}u+4\partial_{yz}y+\partial_{zz}u+\partial_xu+u=0
+\]
+\[
+(\partial_z+2 \partial_y+4 \partial_x)^2 u + 4 \partial_{xy}u+\partial_{xx}u+4 \partial_{yy}u+\partial_xu+u=0
+\]
+\[
+(\partial_z+2 \partial_y+4 \partial_x)^2 u + (\partial_x+2 \partial_y)^2u+\partial_xu+u=0
+\]
+
+We would like to have the new set of variables \(a, b, c\), s.t.
+\(\partial_z+2 \partial_y+4 \partial_x=\partial_a\), \(\partial_x+2 \partial_y=\partial_b\), \(\partial_x=\partial_c\).
+
+We can invert these relations: \(\partial_x=\partial_c\), \(\partial_y=\frac12(\partial_c-\partial_b)\), \(\partial_z=\partial_a-(\partial_c-\partial_b)-4\partial_c=\partial_a+\partial_b-5\partial_c\) (in general it's a computation of the inverse matrix).
+Therefore the relations between variables are 
+\[
+a=z,\qquad b=-\frac12 y+z,  \qquad c=x+\frac12 y-5 z.
+\]
+In these variables
+\[
+(\partial_{aa}+\partial_{bb}+\partial_c+1)u=0,
+\]
+\(u=v e^{-c}\):
+\[
+(\partial_{aa}+\partial_{bb}+\partial_c)v=0,
+\]
+it's 2+1 heat equation.
+
+\item\label{item:32}
+\[
+f_{n+1}-2 f_n+f_{n-1}=\delta_{n,0}-1/N,
+\]
+or equivalently
+\[
+f_{n+1}-2 f_n+f_{n-1}=-1/N, \quad n\neq 0, \qquad f_1-2f_0+f_{N-1}=\frac{N-1}{N}.
+\]
+From the first equation:
+\[
+f_n=\frac{-n^2}{2N}+an+b,
+\]
+from the second equation:
+\[
+\frac{-N^2+2N-2}{2N}+aN=\frac{N-1}{N},\qquad a=1/2,
+\]
+so
+\[
+f_n=\frac{n(N-n)}{2N}+b.
+\]
+We can either normalize it so that \(\sum_n f_n=0\), or leave as is.
+
+Fourier transform if this expression is
+\[
+\tilde{f}_k=\tilde{f}(z) = \sum_{n=0}^{N-1}\left(\frac{n(N-n)}{2N}+b\right) e^{nz} , \qquad z={2\pi i k/N},
+\]
+consider it as a function of \(z\) for arbitrary \(z\) with \(b=0\):
+\begin{multline*}
+\tilde{f}(z)=\frac{\frac{d}{dz}(N-\frac{d}{dz})}{2N}\frac{1-e^{Nz}}{1-e^z}=\frac{d}{dz}\left( \frac1{2}\frac{1}{1-e^z} - \frac1{2N}e^z\frac{1-e^{Nz}}{(1-e^z)^2} \right)=\\
+=\frac{1}{2}\frac{e^z}{(1-e^z)^2}+\frac{e^{N z}}{2}\frac{e^z}{(1-e^z)^2}-\frac{1-e^{Nz}}{2N} \frac{d}{dz}\frac{e^z}{(1-e^z)^2}=\\
+=\frac{1+e^{N z}}{2}\frac1{e^z+e^{-z}-2}+\frac{1-e^{Nz}}{2N}\frac{e^z-e^{-z}}{(e^z+e^{-z}-2)^2}
+\end{multline*}
+
+Now for \(k\neq 0\):
+\[
+\tilde{f}(z)=\frac1{e^z+e^{-z}-2}=\frac1{e^{2\pi ik/N}+e^{-2\pi i k/N}-2}=\tilde{f}_k,
+\]
+which should be compared with \(\frac1{T+T^{-1}-2}\).
+
+We can also compute its value for \(k=0\) or \(z=0\):
+
+\begin{multline*}
+\tilde{f}(z)\sim \frac{1+Nz/2+N^2z^2/4}{z^2(1+z^2/12)} + \frac{(-z-Nz^2/2-N^2z^3/6)2z(1+z^2/6)}{z^4(1+z^2/12)^2}\sim\\
+\sim\frac{1+Nz/2+N^2z^2/4-z^2/12}{z^2} - \frac{1+Nz/2+N^2z^2/6+z^2/6-z^2/6}{z^2}=\\
+=\frac{-N^2 z^2/12-z^2/12}{z^2}=\frac{N^2-1}{12}.
+\end{multline*}
+
+So if we want to choose \(\tilde{f}_0=0\), we put \(b=-\frac{N^2-1}{12N}\).
+
+\item\label{item:33} 
+\[
+\sum_{x=1}^N \sin \frac{\pi k x}{N+1} \sin \frac{\pi m x}{N+1}= \frac12 \sum_{x=1}^N \left(\cos \frac{\pi (k-m)x}{N+1}-\cos \frac{\pi (k+m)x}{N+1}\right)
+\]
+
+
+\end{enumerate}
+
+
+\end{document}

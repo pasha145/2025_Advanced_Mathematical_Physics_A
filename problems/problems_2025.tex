@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{tikz}
+%\usepackage{hyperref}
+%\usepackage{color}
+
+\title{}
+\author{}
+\date{}
+
+\newcommand{\tr}{\operatorname{tr}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\Res}{\mathop{Res}}
+%\numberwithin{equation}{section}
+
+\begin{document}
+%\maketitle
+
+\begin{enumerate}
+\item\label{item:1} Find normal form of the equation \[u_{xx}+2 u_{xy}+u_{yy}+u_x+u=0.\]
+
+\item\label{item:2} Find normal form of the equation \[u_{xx}+2u_{xy}+u_{yy}-u_{zz}=0.\] Write its general solution.
+
+\item\label{item:3} Check that the general solution of the equation \[\partial_x \left(\frac{x y}{x^2+y^2}\partial_x u\right)+\frac12 \partial_x \left(\frac{x^2-y^2}{x^2+y^2}\partial_y u\right)+\frac12 \partial_y \left(\frac{x^2-y^2}{x^2+y^2}\partial_x u\right) - \partial_y\left(\frac{x y}{x^2+y^2}\partial_y u\right)=0\]
+is given by
+\[u(x,y)=F(x^2-y^2)+G(x y).\]
+
+\item\label{item:4} Solve the wave equation on a half-line \(x>0\):
+\[u_{tt}-u_{xx}=\theta_H(1-x), \quad u(0,x)=0, \quad u_t(0,x)=0, \quad u(t,0)=0,\]
+where
+\(\theta_H\) is Heaviside theta function:
+\[\theta_H(x)=\left\{
+\begin{array}{l}0, \quad x<0,\\
+1, \quad x>0,\\
+\frac12, \quad x=0.
+\end{array}
+\right.
+\]
+For simplicity, you may consider its solution only for \(t>4\).
+
+\item\label{item:5} Solve the wave equation on a half-line \(x>0\):
+\[
+u_{tt}-u_{xx}=0, \quad u(0,x)=0, \quad u_t(0,x)=\theta_H(x-3)-\theta_H(x-2), \quad u(t,0)=0.
+\]
+
+For simplicity, you may again consider only the large time case.
+
+\end{enumerate}
+
+\end{document}
