@@ -10,7 +10,7 @@
 
 - [2023](./problems/problems_2023.pdf)
 - [2024](./problems/problems_2024.pdf)
-- [2024](./problems/problems_2023.pdf)
+- [2025](./problems/problems_2025.pdf)
 
 ## Literature
 
