@@ -24,10 +24,14 @@
 
 ## Info about the exam
 
-Concerning the exam. There is one problem: I will move to Birmingham from January 2026. Therefore, I will probably be able to come back just once to organise the exam; all other exams will be organised by someone else (although I will take part in it by preparing problems, and will probably be able to connect online).
+I will move to Birmingham from January 2026. Therefore, I will probably be able to come back just once to organise the exam; all other exams will be organised by someone else (although I will take part in it by preparing problems, and will probably be able to connect online).
 
 As for the structure of the exam: it will consist of written and oral parts. The main idea is that you should be able to solve equations. Therefore, if you manage to solve all problems except a few during the written part, you will not need to come for the oral one. Otherwise, you will need to come and answer some extra questions. As for the problems – they will be similar to those I will write during the semester.
 
 ## Remark on the schedule
 
-One last remark: I will not be in Trieste on 9 and 10 December. Therefore, those lectures will either be cancelled, or exchanged with geometry lectures(?) Last lectures of our course will be on 16 and 17 December.
+I will not be in Trieste on 9 and 10 December. Therefore, those lectures will either be cancelled, or exchanged with geometry lectures(?) Last lectures of our course will be on 16 and 17 December.
+
+## Contacts
+
+For any questions write to <pasha145@gmail.com> (Pavlo Gavrylenko)
