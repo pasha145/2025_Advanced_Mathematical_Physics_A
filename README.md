@@ -2,24 +2,21 @@
 
 ## Recordings
 
-- [2023](https://youtube.com/playlist?list=PLFKddYJiFkm7suM8aHP6iLM_m2wQ31tyW)
+- [2025 (updating)](https://youtube.com/playlist?list=PLFKddYJiFkm6NnXXPL_Gq72AqX-hu5jPz)
 - [2024](https://youtube.com/playlist?list=PLFKddYJiFkm5HLc23j14r5TKbi2R6SM0C)
-- [2025](https://youtube.com/playlist?list=PLFKddYJiFkm6NnXXPL_Gq72AqX-hu5jPz)
+- [2023](https://youtube.com/playlist?list=PLFKddYJiFkm7suM8aHP6iLM_m2wQ31tyW)
 
 ## Problems
 
-- [2023](./problems/problems_2023.pdf)
+- [2025 (updating)](./problems/problems_2025.pdf)
 - [2024](./problems/problems_2024.pdf)
-- [2025](./problems/problems_2025.pdf)
+- [2023](./problems/problems_2023.pdf)
 
 ## Literature
 
 - Dubrovin's lecture notes
-
 - Courant, Hilbert book "Methods of mathematical physics"
-
 - Tikhonov, Samarskii book "Equations of mathematical physics"
-
 - [Syllabus](https://units.coursecatalogue.cineca.it/insegnamenti/2025/118750/2025/1/10801?coorte=2025&schemaid=13028)
 
 ## Info about the exam
