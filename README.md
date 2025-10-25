@@ -14,7 +14,7 @@
 
 ## Literature
 
-- Dubrovin's lecture notes
+- Dubrovin's lecture notes. Old versions: [2019](https://www.math.sissa.it/sites/default/files/course_materials/Zero-to-Laplace.pdf), [2010](https://people.sissa.it/~dubrovin/fm1_web.pdf); the latest version is available by request.
 - Courant, Hilbert book "Methods of mathematical physics"
 - Tikhonov, Samarskii book "Equations of mathematical physics"
 - [Syllabus](https://units.coursecatalogue.cineca.it/insegnamenti/2025/118750/2025/1/10801?coorte=2025&schemaid=13028)
