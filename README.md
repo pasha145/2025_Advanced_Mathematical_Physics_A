@@ -45,11 +45,6 @@ Lectures are in room 134 at SISSA, from 11:00 to 13:00 on Tuesdays and from 14:0
 | 09.12, 10.12 | --, --   |
 | 16.12, 17.12 | 23, 24   |
 
-
-## Remark on the schedule
-
-I will not be in Trieste on 9 and 10 December. Therefore, those lectures will either be cancelled, or exchanged with geometry lectures(?) Last lectures of our course will be on 16 and 17 December.
-
 ## Contacts
 
 For any questions write to <pasha145@gmail.com> (Pavlo Gavrylenko)
