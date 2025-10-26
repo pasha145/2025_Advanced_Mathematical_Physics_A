@@ -18,6 +18,7 @@
 - Courant, Hilbert book "Methods of mathematical physics"
 - Tikhonov, Samarskii book "Equations of mathematical physics"
 - [Syllabus](https://units.coursecatalogue.cineca.it/insegnamenti/2025/118750/2025/1/10801?coorte=2025&schemaid=13028)
+- [Andrew Moyer's notes and problems' solutions (updating)](https://github.com/amo9393/Advanced-Mathematical-Physics-I/blob/main/coursesummary.pdf)
 
 ## Info about the exam
 
