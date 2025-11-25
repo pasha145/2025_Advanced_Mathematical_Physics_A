@@ -149,10 +149,58 @@ u_{tt}-u_{xx}-u_{yy}=0, \\
 \end{gathered}
 \end{equation*}
 
-\item\label{item:26} Solve Laplace equation
+\item\label{item:26} Solve the Laplace equation
 \[
 u_{xx}+u_{yy} = 0, \quad u(0,y) = u(x,0) = 0, \quad u(\pi,y) = \sin y, \quad u(x,\pi) = \sin x.
 \]
+
+\item\label{item:27} Rewrite in polar coordinates (in the 2d case) and in spherical coordinates (in the 3d case) the following expressions:
+\begin{enumerate}
+\item\label{item:28} 2d: \((\vec{\nabla}u)^2 = (\partial_xu)^2 + (\partial_yu)^2\)
+\item\label{item:30} 3d: \((\vec{\nabla}u)^2 = (\partial_xu)^2 + (\partial_yu)^2 + (\partial_zu)^2 \)
+\item\label{item:29} 2d: \(\Delta u = \partial_{xx}u + \partial_{yy}u \)
+\item\label{item:31} 3d: \(\Delta u = \partial_{xx}u + \partial_{yy}u + \partial_{zz}u \)
+\end{enumerate}
+
+Definitions of coordinates systems:
+\begin{itemize}
+\item Polar: \(x = r\cos\phi \), \(y = r\sin\phi \).
+\item Spherical: \(x = r\sin\theta\cos\phi \), \(y = r\sin\theta\sin\phi \), \(z = r\cos\theta \).
+\end{itemize}
+
+\item\label{item:33} Solve the Laplace equation in the unit disk:
+\[\Delta u(r,\phi) = 0, \qquad r\le 1, \qquad u(1,\phi) = \sin2\phi.\]
+Express this solution in terms of \(x, y \).
+Is it obvious why it is a solution?
+
+\item\label{item:43} Solve the Laplace equation outside the unit disk:
+\[\Delta u(r,\phi)=0, \qquad r\ge 1, \qquad u(1,\phi) = \cos\phi. \]
+
+\item\label{item:34} Find the Green function of the 2d Laplace operator in the following domains with zero boundary conditions:
+\begin{enumerate}
+\item\label{item:35} \(\Im z \in [0,\pi]\) (hint: map it to the upper half-plane using \(e^z\))
+\item\label{item:36} \(\arg z \in [0,\pi/a]\) (hint: map it to the upper half-plane using \(z^a\))
+\item\label{item:37} \(\Im z \in [0,\pi]\), \(\Re z \ge 0\) (hint: map it to the upper half-plane using \(\cosh z\))
+\item\label{item:38} \(\Im z \ge 0\), \(|z| \ge 1\) (hint: reduce it to the previous case by taking \(\log z\))
+\item\label{item:39} \(\{z| \Im z \ge 0\} \setminus \{z| \Re z=0, \Im z\in [0,h]\}\) (hint: map it to the upper half-plane using \(\sqrt{z^2+h^2}\))
+\end{enumerate}
+
+\item\label{item:40} Compute Legendre polynomials up to \(P_3(x)\) by expanding
+\[
+\frac1{\sqrt{1 - 2 tx + t^2}} = \sum_{n=0}^{\infty} t^n P_n(x)
+\]
+
+\item\label{item:41} Solve the Laplace equation in the unit ball
+\[
+\Delta u(r,\theta,\phi)=0, \qquad r\le 1, \qquad u(1,\theta,\phi) = \cos\theta.
+\]
+Rewrite this solution in Cartesian coordinates.
+
+\item\label{item:42} Solve the Laplace equation outside the unit ball
+\[
+\Delta u(r,\theta,\phi)=0, \qquad r\ge 1, \qquad u(1,\theta,\phi) = \cos\theta.
+\]
+
 
 \end{enumerate}
 
