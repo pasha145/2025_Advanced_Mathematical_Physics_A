@@ -187,7 +187,7 @@ Is it obvious why it is a solution?
 
 \item\label{item:40} Compute Legendre polynomials up to \(P_3(x)\) by expanding
 \[
-\frac1{\sqrt{1 - 2 tx + t^2}} = \sum_{n=0}^{\infty} t^n P_n(x)
+\frac1{\sqrt{1 - 2 tx + t^2}} = \sum_{n=0}^{\infty} t^n P_n(x).
 \]
 
 \item\label{item:41} Solve the Laplace equation in the unit ball
@@ -199,6 +199,23 @@ Rewrite this solution in Cartesian coordinates.
 \item\label{item:42} Solve the Laplace equation outside the unit ball
 \[
 \Delta u(r,\theta,\phi)=0, \qquad r\ge 1, \qquad u(1,\theta,\phi) = \cos\theta.
+\]
+
+\item\label{item:32} Solve the Laplace equation inside and outside the unit ball
+\[
+\Delta u(x,y,z) = 0, \qquad \left.u(x,y,z)\right|_{x^2+y^2+z^2=1} = x y.
+\]
+
+\item\label{item:44} Spherical Bessel functions are defined by \(j_l(r) = \sqrt{\frac{1}{2 r}} J_{l+\frac12}(r)\).
+Compute \(j_1(r)\) and \(j_{-1}(r)\).
+
+Hint: use the explicit formula for \(J_{\frac12}(r)\) and the recurrence relation.
+
+\item\label{item:45} Compute the Fourier transform of \(j_0(r)\) and of \(J_0(r)\).
+
+\item\label{item:46} Expand as the Fourier series in \(\phi\):
+\[
+e^{i r\cos\phi} = \sum_{n\in \mathbb{Z}} c_n(r) e^{i n \phi}.
 \]
 
 
