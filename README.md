@@ -32,8 +32,8 @@
 
 - Past years' problems.
   - [2025](./exams/2025.md) (note the difference)
-  - 2024: [1](./2024/exam1.pdf), [2](./2024/exam2.pdf), [3](./2024/exam3.pdf), [4](./2024/exam4.pdf), [5](./2024/exam5.pdf), [6](./2024/exam6.pdf), 
-  - 2023: [1](./2023/exam1.pdf), [2](./2023/exam2.pdf), [3](./2023/exam3.pdf), [4](./2023/exam4.pdf), [5](./2023/exam5.pdf)
+  - 2024: [1](./exams/2024/exam1.pdf), [2](./exams/2024/exam2.pdf), [3](./exams/2024/exam3.pdf), [4](./exams/2024/exam4.pdf), [5](./exams/2024/exam5.pdf), [6](./exams/2024/exam6.pdf)
+  - 2023: [1](./exams/2023/exam1.pdf), [2](./exams/2023/exam2.pdf), [3](./exams./2023/exam3.pdf), [4](./exams/2023/exam4.pdf), [5](./exams/2023/exam5.pdf)
 
 
 ## Schedule
