@@ -6,7 +6,7 @@
 
 ## Exam dates
 
-- We need to choose one day for written and one day for oral part (although if you manage to solve everything during the written part, you will not need to come for the oral one).
+- We need to choose one day for the written and one day for the oral part (although if you manage to solve everything during the written part, you will not need to come for the oral one).
 
 - The maximal possible exam duration will be 4.5 hours, for example from 9:30 till 14:00 (or some other time), although 3.5 hours should be sufficient.
 
@@ -24,7 +24,7 @@
 
 - I need to fly to Trieste one day before the exam.
 
-All these restriction can be summarised in the following table, leaving essentially some Thursdays and Fridays:
+All these restrictions can be summarised in the following table, leaving essentially some Thursdays and Fridays:
 
 | Lectures | Tue (11:00-12:00) | Wed      | Thu (13:00-14:00) | Available dates     |
 |----------|-------------------|----------|-------------------|---------------------|
@@ -45,7 +45,7 @@ All these restriction can be summarised in the following table, leaving essentia
 |          | 21 April *        |          |                   | 23, 24 April        |
 |          | 28 April *        |          |                   | ...                 |
 
-Of course, further obstacles can appear later, excluding some other days. This is why I don't mark other days with bold – anything can change.
+Of course, further obstacles can appear later, excluding some other days. This is why I haven't marked the other days with bold – anything can change.
 
 ### Potential dates
 
@@ -53,7 +53,7 @@ Of course, further obstacles can appear later, excluding some other days. This i
 
 - If it is too inconvenient for many of you, we can try to find other days. (5 and 6 February are inconvenient for me, as it makes the schedule too dense.)
 
-- Next exams will be organised by other people. If you prefer, I could try to come to Trieste again later.
+- Future exams will be organised by other people. If you prefer, I could try to come to Trieste again later.
 
 - **[Please, fill in this Google form to indicate your preferences and availability for the exam.](https://docs.google.com/forms/d/e/1FAIpQLSdn4RVsjnd1jpkGU_G05kBF-lJT9EzAYy_s0pjZ3J4CZWBUSQ/viewform)**
 
