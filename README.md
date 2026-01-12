@@ -30,7 +30,7 @@
 
 - As for the structure of the exam: it will consist of written and oral parts on different days. The main idea is that you should be able to solve equations. Therefore, if you manage to solve all problems except a few during the written part, you will not need to come for the oral one. Otherwise, you will need to come and answer some extra questions. As for the problems – they will be similar to those I will write during the semester.
 
-- Past years' problems.
+- Different years' problems.
   - [2025](./exams/2025.md) (note the difference)
   - 2024: [1](./exams/2024/exam1.pdf), [2](./exams/2024/exam2.pdf), [3](./exams/2024/exam3.pdf), [4](./exams/2024/exam4.pdf), [5](./exams/2024/exam5.pdf), [6](./exams/2024/exam6.pdf)
   - 2023: [1](./exams/2023/exam1.pdf), [2](./exams/2023/exam2.pdf), [3](./exams./2023/exam3.pdf), [4](./exams/2023/exam4.pdf), [5](./exams/2023/exam5.pdf)
